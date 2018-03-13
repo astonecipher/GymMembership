@@ -1,6 +1,5 @@
 package com.stonecipherprojects;
 
-import sun.security.util.AuthResources_fr;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,7 +7,7 @@ import java.util.UUID;
 
 public class Member {
 
-    public Member(String first, String last, MembershipType type) {
+    public Member(String first, String last, String type) {
         setFirstName(first);
         setLastName(last);
         setMembershipNumber();

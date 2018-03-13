@@ -1,6 +1,5 @@
 package com.stonecipherprojects;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
 
 enum MembershipType {Student, General, UnderEighteen}
 
@@ -21,7 +20,7 @@ public class Membership {
     private final int UNDER18_JOIN_FEE = 8;
     private final int UNDER18_COMP_FEE = 10;
 
-    public Membership(MembershipType type) {
+    public Membership(String type) {
         setMembershipByType(type);
     }
 
@@ -32,19 +31,22 @@ public class Membership {
     }
 
 
-    public void setMembershipByType(MembershipType type) {
+    public void setMembershipByType(String type) {
         switch (type) {
-            case General:
+            case "G":
+                setMembershipType(MembershipType.General);
                 setMembershipCost(GENERAL_MEMBER_FEE);
                 setJoiningFee(GENERAL_JOIN_FEE);
                 setCompetitionCost(GENERAL_COMP_FEE);
                 break;
-            case Student:
+            case "S":
+                setMembershipType(MembershipType.Student);
                 setMembershipCost(STUDENT_MEMBER_FEE);
                 setJoiningFee(STUDENT_JOIN_FEE);
                 setCompetitionCost(STUDENT_COMP_FEE);
                 break;
-            case UnderEighteen:
+            case "UE":
+                setMembershipType(MembershipType.UnderEighteen);
                 setMembershipCost(UNDER18_MEMBER_FEE);
                 setJoiningFee(UNDER18_JOIN_FEE);
                 setCompetitionCost(UNDER18_COMP_FEE);

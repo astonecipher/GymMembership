@@ -9,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Member> members = new ArrayList<>();
-        members.add(new Member("John", "Doe", MembershipType.Student));
-        members.add(new Member("Harry", "Lee", MembershipType.General));
-        members.add(new Member("Sofia", "Long", MembershipType.UnderEighteen));
+        members.add(new Member("John", "Doe", "S"));
+        members.add(new Member("Harry", "Lee", "G"));
+        members.add(new Member("Sofia", "Long", "UE"));
 
         System.out.println("Membership Number\t\t\t\t\t\tType\t\t\tStart\t\tName\t\tJoin\tMember");
 
