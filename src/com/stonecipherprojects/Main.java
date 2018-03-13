@@ -19,7 +19,7 @@ public class Main {
 
             System.out.println(String.format("%s\t%s\t\t\t%s\t%s\t$%d\t\t$%d",
                     member.getMembershipNumber(),
-                    member.getMembershipType().toString(),
+                    member.membership.getMembershipType().toString(),
                     member.getStartDate().toString(),
                     member.getName(),
                     member.membership.getJoiningFee(),
